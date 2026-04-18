@@ -1,0 +1,43 @@
+/* === Base === */
+body { font-family:'Poppins',sans-serif; margin:0; background:#f5f5f5; color:#333; }
+header { background:#232f3e; color:white; text-align:center; padding:20px; }
+header nav a { color:white; margin:0 15px; text-decoration:none; font-weight:500; }
+header nav a.active { color:#ff9900; }
+
+/* === Hero === */
+.hero { background:url('https://images.unsplash.com/photo-1606813901576-cdd7c39d31ab?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat; height:400px; display:flex; align-items:center; justify-content:center; color:white; text-align:center; position:relative; }
+.hero::after { content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); }
+.hero .content { position:relative; max-width:700px; }
+.hero h2 { font-size:40px; margin-bottom:20px; }
+.hero p { font-size:18px; margin-bottom:20px; }
+.hero .btn { background:#ff9900; color:white; padding:12px 30px; border-radius:10px; text-decoration:none; font-weight:bold; }
+
+/* === Features === */
+.features { display:flex; justify-content:center; flex-wrap:wrap; gap:30px; padding:50px 20px; }
+.feature { background:white; flex:1 1 250px; border-radius:15px; padding:25px; text-align:center; box-shadow:0 8px 20px rgba(0,0,0,0.1); transition:0.3s; }
+.feature img { width:70px; margin-bottom:15px; }
+.feature h3 { color:#232f3e; margin-bottom:10px; }
+.feature:hover { transform:translateY(-5px); }
+
+/* === CTA === */
+.cta { background:#232f3e; color:white; text-align:center; padding:50px 20px; }
+.cta .btn-primary { background:#ff9900; padding:15px 35px; border-radius:10px; color:white; text-decoration:none; }
+
+/* === Dashboard === */
+.dashboard { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; max-width:1200px; margin:40px auto; padding:0 20px; }
+.card { background:#ff9900; border-radius:12px; padding:20px; text-align:center; color:white; transition:0.3s; }
+.card.commandes { background:#00aaff; }
+.card.utilisateurs { background:#ff4444; }
+.card.client { background:#00cc66; }
+.card:hover { transform:translateY(-5px); }
+.card a { color:white; text-decoration:none; font-weight:bold; display:block; margin-top:10px; }
+
+/* === Formulaire === */
+form { max-width:400px; margin:40px auto; display:flex; flex-direction:column; gap:10px; background:white; padding:20px; border-radius:12px; box-shadow:0 8px 15px rgba(0,0,0,0.1);}
+input, select { padding:8px; border-radius:6px; border:1px solid #ccc; }
+button { background:#232f3e; color:white; padding:10px; border:none; border-radius:6px; cursor:pointer; transition:0.3s;}
+button:hover { background:#ff9900; }
+.success { color:green; font-weight:bold; text-align:center; }
+
+/* === Footer === */
+footer { background:#1a4f9b; color:white; text-align:center; padding:20px; margin-top:30px; font-size:14px; }

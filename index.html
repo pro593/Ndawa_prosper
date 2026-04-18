@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RESERVATION EN LIGNE</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* === Reset === */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+/* === Header === */
+header { background:#232f3e; color:white; padding:10px 20px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:100; }
+header h1 { font-size:24px; }
+header nav a { color:white; text-decoration:none; margin-left:20px; font-weight:500; }
+header nav a:hover { color:#ff9900; }
+
+/* === Barre de recherche === */
+.search-bar { flex:1; margin:0 20px; display:flex; }
+.search-bar input { flex:1; padding:8px 12px; border-radius:4px 0 0 4px; border:none; }
+.search-bar button { padding:8px 15px; border:none; background:#ff9900; color:white; font-weight:bold; border-radius:0 4px 4px 0; cursor:pointer; }
+
+/* === Hero Banner === */
+.hero { background:url('https://images.unsplash.com/photo-1606813901576-cdd7c39d31ab?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat; height:400px; display:flex; align-items:center; justify-content:center; color:white; text-align:center; position:relative; }
+.hero::after { content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4); }
+.hero .content { position:relative; max-width:700px; }
+.hero h2 { font-size:40px; margin-bottom:20px; font-weight:700; }
+.hero p { font-size:18px; margin-bottom:20px; }
+.hero .btn { background:#ff9900; color:white; padding:12px 30px; border-radius:6px; text-decoration:none; font-weight:bold; }
+
+/* === Grille de produits === */
+.products-section { padding:40px 20px; max-width:1200px; margin:auto; }
+.products-section h2 { margin-bottom:20px; color:#232f3e; }
+.products-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:20px; }
+.product { background:white; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1); padding:15px; text-align:center; transition:0.3s; }
+.product img { width:100%; border-radius:10px; margin-bottom:10px; }
+.product h3 { font-size:18px; margin-bottom:5px; color:#232f3e; }
+.product p { font-size:14px; color:#555; margin-bottom:10px; }
+.product .btn { background:#ff9900; color:white; padding:8px 15px; border-radius:6px; text-decoration:none; font-weight:bold; }
+
+/* === CTA === */
+.cta { text-align:center; padding:40px 20px; }
+.cta .btn-primary { background:#232f3e; padding:15px 35px; border-radius:10px; color:white; text-decoration:none; font-weight:bold; }
+
+/* === Footer === */
+footer { background:#232f3e; color:white; text-align:center; padding:30px 20px; margin-top:40px; font-size:14px; }
+footer a { color:white; text-decoration:none; margin:0 10px; }
+footer a:hover { color:#ff9900; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>RESERVATION EN LIGNE</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Rechercher un produit...">
+        <button>Rechercher</button>
+    </div>
+    <nav>
+        <a href="index.php" class="active">Accueil</a>
+        <a href="dashboard.php">Tableau de bord</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="content">
+        <h2>Bienvenue sur RESERVATION EN LIGNE</h2>
+        <p>Découvrez nos produits et gérez vos commandes facilement.</p>
+        <a href="dashboard.php" class="btn">Accéder au tableau de bord</a>
+    </div>
+</section>
+
+<section class="products-section">
+    <h2>Produits populaires</h2>
+    <div class="products-grid">
+        <div class="product">
+            <img src="https://via.placeholder.com/200x150" alt="Produit 1">
+            <h3>Produit 1</h3>
+            <p>Description courte du produit 1</p>
+            <a href="commande_client.php" class="btn">Commander</a>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200x150" alt="Produit 2">
+            <h3>Produit 2</h3>
+            <p>Description courte du produit 2</p>
+            <a href="commande_client.php" class="btn">Commander</a>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200x150" alt="Produit 3">
+            <h3>Produit 3</h3>
+            <p>Description courte du produit 3</p>
+            <a href="commande_client.php" class="btn">Commander</a>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200x150" alt="Produit 4">
+            <h3>Produit 4</h3>
+            <p>Description courte du produit 4</p>
+            <a href="commande_client.php" class="btn">Commander</a>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Boostez votre boutique dès maintenant !</h2>
+    <a href="dashboard.php" class="btn-primary">Commencez ici</a>
+</section>
+
+<footer>
+    <p>&copy; 2026 RESERVATION EN LIGNE. Tous droits réservés.</p>
+    <div>
+        <a href="#">À propos</a> | 
+        <a href="#">Contact</a> | 
+        <a href="#">CGU</a>
+        <a href="#">prosper ndawa site web</a>
+    </div>
+</footer>
+
+</body>
+</html>
